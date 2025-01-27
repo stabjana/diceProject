@@ -36,6 +36,11 @@ Returns the upper bound of the dice.
 
 ---
 
+Getters
+(cannot be tested directly because we cannot access the object)
+
+---
+
 ## Operations
 
 ### Constructor: `constructor(upperBound)`
