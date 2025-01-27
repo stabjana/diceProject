@@ -34,3 +34,36 @@ Create a dice with upperBound:
 - -1 throws `'upper bound too small'`
 
 - 21 throws `'upper bound too big'`
+
+### 1. Create a dice with no upper bound given
+
+roll the dice
+
+Expect:
+dots to be <= 6
+and dots >=1
+
+should be repeated multiple times, to be checked later...
+
+### 2. Create a dice with upper bound 2...20
+
+roll the dice
+
+Expect:
+dots to be <= upperbound
+and dots >=1
+
+should be repeated multiple times, to be checked later...
+
+### 3. Test to String
+
+Test with not rolled and rolled
+in both cases create new dice (no upper bound given)
+
+create new dice every time with forEach
+
+1. roll the dice
+   expect to return dot count as text. Compare it with dots casted as string
+
+   2. not rolled
+      expect to return `'not rolled yet'`
