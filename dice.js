@@ -28,4 +28,16 @@ module.exports = class Dice {
     get dots() {
         return this.#dotCount;
     }
+    roll() {
+        this.#dotCount = Math.floor(Math.random() * this.#upperBound) + 1;
+    }
+
+    toString() {
+        if (this.#dotCount === 0) {
+            return 'not rolled yet';
+        }
+        else {
+            return `${this.#dotCount}`;
+        }
+    }
 }
